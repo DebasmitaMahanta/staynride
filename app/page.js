@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen bg-blue-900">
-      {/* Navigation Bar */}
+     
       <nav className="flex items-center justify-between px-8 py-4 bg-white">
         <div className="flex items-center">
           <h1 className="text-2xl font-bold text-blue-900">Stay’nRide</h1>
@@ -21,7 +21,6 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <main className="relative min-h-[calc(100vh-80px)]">
         <div className="absolute inset-0 bg-[url('/hostel-bg.jpg')] bg-cover bg-center opacity-20"></div>
         <div className="relative container mx-auto px-4 py-20 text-center">
