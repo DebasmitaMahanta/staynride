@@ -1,20 +1,26 @@
+"use client";
+
+import { Search } from "lucide-react";
+
 export default function SearchBar() {
   return (
-    <div className="max-w-3xl mx-auto">
-      <form className="flex items-center bg-white rounded-full p-2">
+    <div className="w-full max-w-3xl mx-auto px-4">
+      <form className="flex flex-col sm:flex-row items-stretch bg-white rounded-full overflow-hidden shadow-md focus-within:ring-2 focus-within:ring-yellow-400 transition-all duration-200">
+        
+        
         <input
           type="text"
-          placeholder="Search Hostels"
-          className="w-full px-6 py-3 rounded-full focus:outline-none text-gray-900"
+          placeholder="Search Hostel"
+          className="w-full px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base text-gray-900 focus:outline-none placeholder-gray-500"
         />
-        <button 
+
+        
+        <button
           type="submit"
-          className="px-8 py-3 bg-yellow-400 rounded-full text-gray-900 font-medium hover:bg-yellow-500 flex items-center gap-2"
+          className="mt-2 sm:mt-0 sm:ml-2 flex justify-center items-center gap-2 px-6 py-2.5 sm:py-3 bg-yellow-400 text-gray-900 font-medium text-sm sm:text-base rounded-full hover:bg-yellow-500 transition-all duration-200"
         >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-          Search
+          <Search className="w-4 h-4 sm:w-5 sm:h-5" />
+          <span>Search</span>
         </button>
       </form>
     </div>

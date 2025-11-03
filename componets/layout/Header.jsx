@@ -11,7 +11,7 @@ export default function Header() {
     <header className="fixed w-full backdrop-blur-md shadow-sm z-50 border-b border-white/20">
       <nav className="flex items-center justify-between">
 
-        <div className="flex items-center bg-blue-600/40 backdrop-blur-lg border border-white/20 text-white px-5 py-3 rounded-tr-[50px] shadow-md">
+        <div className="flex items-center bg-[#1E3A8A] backdrop-blur-lg border border-white/20 text-white px-5 py-3 rounded-tr-[50px] shadow-md">
           <Link href="/" className="flex flex-col items-start leading-tight">
             <h1 className="text-[20px] sm:text-[22px] lg:text-[24px] font-bold tracking-wide font-heading">
               Stay<span className="text-yellow-400">NRide</span>
@@ -56,7 +56,7 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* ---------------- Mobile Menu Button ---------------- */}
+       
         <button
           className="lg:hidden text-white pr-2 sm:pr-4"
           onClick={() => setIsOpen(!isOpen)}
@@ -65,7 +65,7 @@ export default function Header() {
         </button>
       </nav>
 
-      {/* ---------------- Mobile Dropdown Menu ---------------- */}
+     
       {isOpen && (
         <div className="lg:hidden bg-white/90 backdrop-blur-md border-t border-white/20 shadow-md py-4 px-6 flex flex-col gap-4">
           {[
