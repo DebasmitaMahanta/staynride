@@ -2,6 +2,7 @@ import { Playfair_Display, Playfair_Display_SC } from "next/font/google";
 import "./globals.css";
 import Header from "@/componets/layout/Header";
 import Footer from "@/componets/layout/Footer";
+import { AuthProvider } from "@/componets/context/authContent";
 
 
 const playfair = Playfair_Display({
@@ -24,6 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <AuthProvider>
     <html lang="en">
       <body
         className={`${playfair.variable} ${playfairSC.variable} antialiased font-body`}
@@ -36,5 +38,6 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
+    </AuthProvider>
   );
 }
