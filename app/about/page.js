@@ -5,7 +5,7 @@ import { Building2, DollarSign, BookOpen, Users2 } from "lucide-react";
 
 export default function AboutUs() {
   return (
-    <section className="bg-white  md:px-12 lg:px-24">
+    <section className="py-2 bg-white  md:px-12 lg:px-24">
       <div className="container mx-auto grid md:grid-cols-2 gap-16 items-center">
         
        
@@ -24,7 +24,7 @@ export default function AboutUs() {
           <h3 className="text-[#1e3a8a] font-semibold text-base ">
             Let’s Go Together
           </h3>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a8a]  leading-tight">
+          <h2 className="text-2xl md:text-5xl font-bold text-[#1e3a8a]  leading-tight">
             About Us
           </h2>
           <p className="text-gray-800 text-sm leading-relaxed mb-10 max-w-xl">

@@ -25,7 +25,7 @@ const LoginRegisterPage = () => {
           {isLogin ? "Welcome Back 👋" : "Create an Account 📝"}
         </h2>
 
-        {/* Form */}
+        
         <form className="space-y-4">
           {!isLogin && (
             <div>
